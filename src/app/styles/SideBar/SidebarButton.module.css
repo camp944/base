@@ -1,0 +1,54 @@
+.button {
+    width: 80%;
+    height: 44px;
+    
+    margin-bottom: 22px;
+    padding: 5px;
+    text-align: left;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px 13px 13px 5px;
+    
+    background-color: rgba(255, 252, 240, 0.8);
+    color: #442a6a;
+
+    transition: all 0.3s ease;
+}
+
+.icon {
+    display: inline-flex;
+    margin-right: 15px; /* Aumentando o espaçamento entre o ícone e o texto */
+    margin-left: 6px; /* Move o ícone para a direita, centralizando-o dentro do button-container */
+    align-self: center; /* Alinhando o ícone verticalmente */
+}
+
+.text {
+    display: inline-flex;
+    
+    align-self: center; /* Alinhando o texto verticalmente */
+    width: 70%;
+    text-align: center;
+    opacity: 0; /* Comece com o texto oculto */
+    transition: opacity 0.5s ease; /* Adicione a transição */
+}
+
+.button:hover {
+    background-color: rgba(255, 101, 26, 0.8);
+    color:rgba(255, 252, 240, 1);
+    
+    border-radius: 5px 10px 10px 5px;
+    transition: all 0.3s ease;
+}
+
+.show {
+    opacity: 1;/* Exiba gradualmente o texto */
+}
+
+.button-container {
+    display: flex;
+    text-align: center;
+    align-content: center ;
+    align-items: center; /* Alinhando os itens verticalmente */
+    justify-content: center; /* Alinhando os itens horizontalmente */
+    
+}
